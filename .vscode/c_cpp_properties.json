@@ -1,0 +1,60 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "c:/Users/kimchips/Dropbox (Kimchi and Chips)/KC53 - TeamFactory new/Controllino PLC/TestControllino/include",
+                "c:/Users/kimchips/Dropbox (Kimchi and Chips)/KC53 - TeamFactory new/Controllino PLC/TestControllino/src",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "c:/Users/kimchips/Dropbox (Kimchi and Chips)/KC53 - TeamFactory new/Controllino PLC/TestControllino/.pio/libdeps/uno/CONTROLLINO",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/variants/Controllino_maxi",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "C:/Users/kimchips/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Users/kimchips/Dropbox (Kimchi and Chips)/KC53 - TeamFactory new/Controllino PLC/TestControllino/include",
+                    "c:/Users/kimchips/Dropbox (Kimchi and Chips)/KC53 - TeamFactory new/Controllino PLC/TestControllino/src",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "c:/Users/kimchips/Dropbox (Kimchi and Chips)/KC53 - TeamFactory new/Controllino PLC/TestControllino/.pio/libdeps/uno/CONTROLLINO",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/variants/Controllino_maxi",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/kimchips/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "C:/Users/kimchips/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50101",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/kimchips/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
