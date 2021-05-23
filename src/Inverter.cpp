@@ -29,6 +29,13 @@ Inverter::printStatus() const
 }
 
 void
+Inverter::unlock()
+{
+	this->modbusClient->write((ParameterAddress) Parameter::ParameterLock
+		, (uint16_t) 1);
+}
+
+void
 Inverter::run(const Direction& direction)
 {
 	this->modbusClient->write((ParameterAddress) Parameter::RunCommand

@@ -29,6 +29,7 @@ public:
 	void pull();
 	void printStatus() const;
 
+	void unlock();
 	void run(const Direction&);
 	void stop();
 	void setFrequency(float);
