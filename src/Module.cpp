@@ -15,10 +15,10 @@ Module::init(ModbusClient& modbusClient, uint8_t endstopLeft, uint8_t endstopRig
 void
 Module::updateState()
 {
-	if(digitalRead(this->endstopLeft) && this->state == State::RunLeft) {
+	if(!digitalRead(this->endstopLeft) && this->state == State::RunLeft) {
 		this->setState(State::WaitLeft);
 	}
-	if(digitalRead(this->endstopRight) && this->state == State::RunRight) {
+	if(!digitalRead(this->endstopRight) && this->state == State::RunRight) {
 		this->setState(State::WaitRight);
 	}
 }

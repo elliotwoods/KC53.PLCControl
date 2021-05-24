@@ -16,7 +16,9 @@ Module modules[MODULE_COUNT];
 // A debug LED flashes alternatively on/off every loop
 bool ledValue = LOW;
 
-void setup() {
+void
+setup()
+{
 	// Fill in configurations for all the individual modbus clients here
 	for(uint8_t i=0; i<MODULE_COUNT; i++) {
 		modbusClients[i].init(modbusMaster, i + 1);
@@ -34,7 +36,9 @@ void setup() {
 	Serial.begin(115200);
 }
 
-void loop() {
+void
+updateState()
+{
 	for(uint8_t i=0; i<MODULE_COUNT; i++) {
 		modules[i].updateState();
 	}
@@ -64,11 +68,19 @@ void loop() {
 			}
 		}
 	}
+}
 
+void
+sendCommands()
+{
 	for(uint8_t i=0; i<MODULE_COUNT; i++) {
 		modules[i].sendCommands();
 	}
+}
 
+void
+printDebug()
+{
 	for(uint8_t i=0; i<MODULE_COUNT; i++) {
 		char message[100];
 		sprintf(message, "[%d] : ", i);
@@ -76,12 +88,26 @@ void loop() {
 		modules[i].printStatus();
 		Serial.println();
 	}
+}
 
+void
+flashLED()
+{
 	// LED indicator
 	{
 		ledValue = !ledValue;
 		digitalWrite(LED_BUILTIN, ledValue);
 	}
+}
+
+void
+loop()
+{
+	updateState();
+
+	sendCommands();
+
+	printDebug();
 
 	delay(100);
 }

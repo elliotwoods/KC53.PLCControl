@@ -1,9 +1,12 @@
+
 # Information
 
 * The "end stop" is the sensor that detect when the carriage is near the end of motion at either end
 * The "stopper" is the physical hard stop that stops the movement mechanically. We want to avoid hitting the hard stop.
 * Installation "Right" = Inverter "Reverse"
 * Installation "Left" = Inverter "Forward"
+* ModbusRTU is hardcoded for 9600bps right now (this might change). This is to match the default value of the inverter.
+* The end stop polarity is switched. I.e. LOW = active.
 
 # Notes for setup
 
